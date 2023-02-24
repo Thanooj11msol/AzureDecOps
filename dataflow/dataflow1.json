@@ -18,7 +18,11 @@
 						"referenceName": "AzureSynapseAnalyticsTable1",
 						"type": "DatasetReference"
 					},
-					"name": "sink1"
+					"name": "sink1",
+					"rejectedDataLinkedService": {
+						"referenceName": "AzureDataLakeStorage1",
+						"type": "LinkedServiceReference"
+					}
 				}
 			],
 			"transformations": [
@@ -81,6 +85,7 @@
 				"     insertable:true,",
 				"     updateable:false,",
 				"     upsertable:true,",
+				"     keys:['PrimaryGenre ','year'],",
 				"     format: 'table',",
 				"     staged: true,",
 				"     allowCopyCommand: true,",
