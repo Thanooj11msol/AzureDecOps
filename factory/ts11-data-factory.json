@@ -1,0 +1,9 @@
+{
+	"name": "ts11-data-factory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bc9df47f-cd59-44ce-88dd-0639863f3a8a",
+		"tenantId": "f924bcbf-aca9-4cb7-9803-2cf8847278f7"
+	}
+}
