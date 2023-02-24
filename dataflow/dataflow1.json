@@ -76,7 +76,7 @@
 				"          NumberOfMovies = count()) ~> aggregate1",
 				"aggregate1 alterRow(upsertIf(true())) ~> alterRow1",
 				"alterRow1 sink(allowSchemaDrift: true,",
-				"     validateSchema: false,",
+				"     validateSchema: true,",
 				"     deletable:false,",
 				"     insertable:false,",
 				"     updateable:false,",
